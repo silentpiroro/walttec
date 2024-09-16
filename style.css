@@ -109,6 +109,71 @@ header, section, footer {
     font-size: 1rem;
 }
 
+/*PROCESS-2-Section*/
+/* Process Section Styles */
+.process {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.process-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.process-steps {
+    flex: 1;
+    padding: 20px;
+}
+
+.process-steps h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.process-step {
+    margin-bottom: 20px;
+}
+
+.process-step h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.process-step p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.process-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.process-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .process-content {
+        flex-direction: column;
+    }
+
+    .process-image {
+        margin-top: 20px;
+    }
+}
+
+
 /* Contact Section */
 .contact-form {
     background-color: #2542aa;
