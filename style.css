@@ -123,15 +123,36 @@ header, section, footer {
 }
 
 /* Footer */
+/* Footer */
 footer {
     background-color: #f1f1f1;
     padding: 30px 20px;
+    text-align: center;
+}
+
+footer nav {
+    margin: 10px 0;
 }
 
 footer a {
     color: #2542aa;
     text-decoration: none;
     margin: 0 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
 }
 
 /* Media Queries for Mobile Responsiveness */
