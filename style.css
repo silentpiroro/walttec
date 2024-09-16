@@ -270,6 +270,7 @@ footer a {
     }
 }
 /* Numbers Section Styles */
+/* Numbers Section Styles */
 .numbers {
     background-color: #fff;
     padding: 50px 0;
@@ -285,15 +286,19 @@ footer a {
 
 .numbers-content {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.numbers-info {
+    flex: 1;
+    padding: 20px;
 }
 
 .number-item {
-    flex: 1;
     padding: 20px;
-    max-width: 300px;
-    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .number-item i {
@@ -315,7 +320,11 @@ footer a {
 }
 
 .video-container {
-    margin-top: 40px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .video-container h3 {
@@ -326,9 +335,10 @@ footer a {
 }
 
 .video-container iframe {
-    max-width: 100%;
-    height: auto;
-    border: none;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 450px;
 }
 
 /* Responsive Adjustments */
@@ -338,7 +348,14 @@ footer a {
         align-items: center;
     }
 
-    .number-item {
+    .numbers-info, .video-container {
         margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+        height: auto;
     }
 }
+
