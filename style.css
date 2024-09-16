@@ -269,3 +269,76 @@ footer a {
         font-size: 1.2rem;
     }
 }
+/* Numbers Section Styles */
+.numbers {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.numbers h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #2542aa;
+}
+
+.numbers-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.number-item {
+    flex: 1;
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.number-item i {
+    font-size: 50px;
+    color: #2542aa;
+    margin-bottom: 15px;
+}
+
+.number-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #2542aa;
+}
+
+.number-item p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.video-container {
+    margin-top: 40px;
+}
+
+.video-container h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2542aa;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .numbers-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .number-item {
+        margin-bottom: 30px;
+    }
+}
