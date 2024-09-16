@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walt Tec | Largest Sock Manufacturer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* General Layout */
+        header, section, footer {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #2542aa;
+            color: white;
+            padding: 100px 50px;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #2542aa;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .cta-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Credibility Section */
+        .credibility {
+            background-color: #f9f9f9;
+        }
+        .brand-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .brand-logos img {
+            max-height: 50px;
+            margin: 10px 20px;
+            opacity: 0.7;
+        }
+
+        /* Process Section */
+        .process {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            text-align: left;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+        .process-step {
+            width: 23%;
+            min-width: 220px;
+            margin: 15px 0;
+        }
+        .process-step h3 {
+            font-size: 1.4rem;
+            color: #2542aa;
+            margin-bottom: 10px;
+        }
+        .process-step p {
+            font-size: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-form {
+            background-color: #2542aa;
+            color: white;
+            padding: 50px 20px;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: white;
+            color: #2542aa;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f1f1f1;
+            padding: 30px 20px;
+        }
+        footer a {
+            color: #2542aa;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header, section, footer {
+                padding: 30px 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            .process {
+                flex-direction: column;
+                align-items: center;
+            }
+            .process-step {
+                width: 90%;
+                text-align: center;
+            }
+
+            .brand-logos {
+                flex-direction: column;
+            }
+            .brand-logos img {
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 0.9rem;
+            }
+            .cta-button {
+                padding: 8px 15px;
+                font-size: 1rem;
+            }
+            .process-step h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header class="hero">
+    <div class="container">
+        <h1>Partner with the World's Largest Sock Manufacturer</h1>
+        <p>We Manufacture Socks for the Biggest Brands. Now It's Your Turn.</p>
+        <a href="#contact" class="cta-button">Start Your Sock Line Today</a>
+    </div>
+</header>
+
+<!-- Credibility Section -->
+<section class="credibility">
+    <div class="container">
+        <h2>Trusted by the World's Biggest Brands</h2>
+        <div class="brand-logos">
+            <img src="nike-logo.png" alt="Nike">
+            <img src="bombas-logo.png" alt="Bombas">
+            <img src="crocs-logo.png" alt="Crocs">
+            <!-- Add more logos as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process">
+    <div class="container">
+        <h2>From Concept to Bulk Production in 2 Weeks</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <h3>1. Concept & Design</h3>
+                <p>Share your design vision with us or let us help you bring it to life.</p>
+            </div>
+            <div class="process-step">
+                <h3>2. Sample Creation</h3>
+                <p>We create high-quality samples for your approval within 2 weeks.</p>
+            </div>
+            <div class="process-step">
+                <h3>3. Approval & Adjustments</h3>
+                <p>Approve the sample or request adjustments to ensure perfection.</p>
+            </div>
+            <div class="process-step">
+                <h3>4. Bulk Production</h3>
+                <p>Once approved, we move into full-scale production, delivering high-quality results every time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-form" id="contact">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p>Fill out the form below to start your partnership with us.</p>
+        <!-- Placeholder for HubSpot form integration -->
+        <form>
+            <!-- Replace this form with HubSpot's embedded form code -->
+            <input type="text" name="company" placeholder="Company Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="Tell us more about your project" rows="5" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Walt Tec. All Rights Reserved.</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#process">Our Process</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Facebook</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
 
