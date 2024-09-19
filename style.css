@@ -176,36 +176,56 @@ header, section, footer {
 }
 
 /* Footer */
-/* Footer */
-footer {
-    background-color: #f1f1f1;
-    padding: 30px 20px;
+/* Footer Section */
+.footer {
+    background-color: #2542aa;
+    padding: 40px 20px;
+    color: #fff;
     text-align: center;
 }
 
-footer nav {
-    margin: 10px 0;
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
 }
 
-footer a {
-    color: #2542aa;
-    text-decoration: none;
-    margin: 0 10px;
+.footer-address {
+    margin-bottom: 20px;
 }
 
-.social-links {
-    margin-top: 20px;
+.footer-address p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0;
 }
 
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.social-links img {
-    width: 30px;
+.footer-social a img {
+    width: 40px;
     height: auto;
-    vertical-align: middle;
+}
+
+.footer-social a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-social {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-logo img {
+        width: 120px;
+    }
 }
 
 /* Media Queries for Mobile Responsiveness */
