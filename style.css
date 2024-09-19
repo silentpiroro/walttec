@@ -593,16 +593,14 @@ section {
 
 .video-container {
     display: flex;
+    flex-direction: row; /* Ensures videos are in a row by default */
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 30px;
 }
 
 .video-wrapper {
-    flex: 1 1 45%; /* 45% width for each video on wide screens */
+    flex: 1 1 45%; /* Ensures each video takes 45% of the container width */
     max-width: 560px;
-    width: 100%;
-    height: auto;
 }
 
 .video-wrapper iframe, .video-wrapper video {
@@ -616,16 +614,12 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .video-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stacks videos vertically on small screens */
+        gap: 20px; /* Reduces gap between videos on smaller screens */
     }
 
     .video-wrapper {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        max-width: 100%;
-    }
-
-    .video-wrapper iframe, .video-wrapper video {
-        height: auto;
+        flex: 1 1 100%; /* Each video takes full width on small screens */
     }
 }
+
