@@ -85,93 +85,81 @@ header, section, footer {
 
 /* Process Section */
 .process {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-    flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+    text-align: center;
 }
 
-.process-step {
-    width: 23%;
-    min-width: 220px;
-    margin: 15px 0;
-}
-
-.process-step h3 {
-    font-size: 1.4rem;
+.process h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
     color: #2542aa;
-    margin-bottom: 10px;
-}
-
-.process-step p {
-    font-size: 1rem;
-}
-
-/*PROCESS-2-Section*/
-/* Process Section Styles */
-.process {
-    background-color: #f9f9f9;
-    padding: 50px 0;
 }
 
 .process-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 30px; /* Space between the text and image */
 }
 
 .process-steps {
-    flex: 1;
-    padding: 20px;
-}
-
-.process-steps h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.process-step {
-    margin-bottom: 20px;
-}
-
-.process-step h3 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.process-step p {
-    font-size: 16px;
-    line-height: 1.6;
+    flex: 1 1 50%;
 }
 
 .process-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    flex: 1 1 40%; /* Adjusts to occupy 40% of the space */
 }
 
 .process-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    object-fit: contain;
+    border-radius: 10px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
+.step {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 30px; /* Adds space between steps */
+}
+
+.step i {
+    font-size: 2.5rem;
+    color: #2542aa;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.step p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6; /* Better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
     .process-content {
         flex-direction: column;
     }
 
+    .process-steps {
+        flex: 1 1 100%;
+    }
+
     .process-image {
-        margin-top: 20px;
+        flex: 1 1 100%;
+        margin-top: 20px; /* Adds space between steps and image on mobile */
     }
 }
+
 
 
 /* Contact Section */
