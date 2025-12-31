@@ -45,6 +45,25 @@ src="https://www.facebook.com/tr?id=1177282140013261&ev=PageView&noscript=1"
 
   gtag('config', 'AW-16693481338');
 </script>
+    <!-- Event snippet for HubSpot - Walt Tec Custom Socks conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16693481338/CiQtCLC5sd0ZEPqeiZg-',
+      'value': 200.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
 </head>
 <body>
 
